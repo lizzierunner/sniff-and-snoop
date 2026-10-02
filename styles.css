@@ -7,6 +7,7 @@
   --header-bg: #FFD873;
   --brand: #23284A;
   --hero-bg: #BFE3D0;
+    --lens: #23284A;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -78,4 +79,22 @@ h1 {
 .hero-sub {
   max-width: 34rem;
   margin: 0 auto 1.5rem;
+}
+
+/* Dachshund */
+.dog-btn {
+  display: block;
+  width: min(100%, 560px);
+  margin: 0 auto;
+  padding: 0;
+  color: var(--lens);
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+.dog {
+  width: 100%;
+  height: auto;
+  overflow: visible;
 }
