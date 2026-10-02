@@ -11,6 +11,10 @@
 }
 
 *, *::before, *::after { box-sizing: border-box; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 76px;
+}
 
 body {
   margin: 0;
@@ -135,4 +139,26 @@ h1 {
 @media (prefers-reduced-motion: reduce) {
   .dog-btn.happy .tail { animation: none; }
   .bubble { transition: none; }
+}
+/* Sections */
+h2 {
+  font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+  font-weight: 600;
+}
+
+.section {
+  max-width: 68rem;
+  margin: 0 auto;
+  padding: 3rem 1.25rem;
+}
+
+.section-sub {
+  max-width: 36rem;
+  margin: 0 0 1.75rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1.25rem;
 }
